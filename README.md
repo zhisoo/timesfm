@@ -19,6 +19,9 @@ This open version is not an officially supported Google product.
 > **Personal fork note:** I'm using this repo to experiment with TimesFM 2.5 for
 > demand forecasting on retail datasets. If you stumbled here looking for the
 > upstream project, head to [google-research/timesfm](https://github.com/google-research/timesfm).
+>
+> **My setup:** Python 3.11, JAX with CUDA 12, weekly sales data at SKU level.
+> Context length of 512 has been sufficient for my datasets so far.
 
 **Latest Model Version:** TimesFM 2.5
 
@@ -62,13 +65,4 @@ Since the Sept. 2025 launch, the following improvements have been completed:
 
 1.  ✅ Flax version of the model for faster inference.
 2.  ✅ Covariate support via XReg (see Oct. 2025 update).
-3.  ✅ Documentation, examples, and agent skill (see `timesfm-forecasting/`).
-4.  ✅ Fine-tuning example with LoRA via HuggingFace Transformers + PEFT (see `timesfm-forecasting/examples/finetuning/`).
-5.  ✅ Unit tests for core layers, configs, and utilities (see `tests/`).
-
-### Install
-
-1.  Clone the repository:
-    ```shell
-    git c
-```
+3.  ✅ Documentation, examples, and agent skill (see `timesfm-forecasting/`)

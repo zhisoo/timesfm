@@ -22,6 +22,10 @@ This open version is not an officially supported Google product.
 >
 > **My setup:** Python 3.11, JAX with CUDA 12, weekly sales data at SKU level.
 > Context length of 512 has been sufficient for my datasets so far.
+>
+> **Tip:** When running inference on CPU (e.g. for quick local tests), set
+> `per_core_batch_size=4` to avoid OOM — the default of 32 is too large for
+> most laptop configs.
 
 **Latest Model Version:** TimesFM 2.5
 
@@ -63,6 +67,4 @@ Comparing to TimesFM 2.0, this new 2.5 model:
 
 Since the Sept. 2025 launch, the following improvements have been completed:
 
-1.  ✅ Flax version of the model for faster inference.
-2.  ✅ Covariate support via XReg (see Oct. 2025 update).
-3.  ✅ Documentation, examples, and agent skill (see `timesfm-forecasting/`)
+1.  ✅ Flax version of the model for f
